@@ -24,7 +24,7 @@ function Contacts() {
                 caret-black focus:outline-none focus:ring focus:ring-blue-300"/>
                 <ValidationError prefix="Email" field="email" errors={state.errors}/>
                 <textarea name="message" id="message" placeholder="Message..."
-                onChange={e => setMessage(e.target.value)} 
+                onChange={e => setMessage(e.target.value)}
                 className="w-lg h-70 border rounded-sm mb-3 p-2
                 caret-black focus:outline-none focus:ring focus:ring-blue-300"/>
                 <ValidationError prefix="Message" field="message" errors={state.errors}/>
