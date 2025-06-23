@@ -2,7 +2,7 @@ import { useForm, ValidationError } from "@formspree/react"
 import { useState } from "react"
 
 function Contacts() {
-    const [state, handleSubmit] = useForm('mzzgagoq')
+    const [state, handleSubmit] = useForm('asd') //'mzzgagoq'
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
 
@@ -29,7 +29,8 @@ function Contacts() {
                 caret-black focus:outline-none focus:ring focus:ring-blue-300"/>
                 <ValidationError prefix="Message" field="message" errors={state.errors}/>
                 <button type="submit" disabled={!canSubmit}
-                className={`${canSubmit ? '!bg-blue-500 text-white' : '!bg-gray-400 black cursor-not-allowed !border-gray-400'}`}>Submit</button>
+                className={`${canSubmit ? '!bg-blue-500 !border-blue-500 text-white hover:!bg-blue-400 hover:!border-blue-400 ' : 
+                '!bg-gray-400 black cursor-not-allowed !border-gray-400'}`}>Submit</button>
             </form>
         </>
     )
